@@ -1,7 +1,5 @@
 package com.gulio.todo_swing.view
 
-import HintTextArea
-import HintTextField
 import com.gulio.todo_swing.configuration.ApplicationContextProvider
 import com.gulio.todo_swing.entity.Todo
 import com.gulio.todo_swing.repository.TodoRepository
@@ -12,14 +10,16 @@ import java.awt.event.ActionListener
 import java.sql.Timestamp
 import javax.swing.*
 
-class TodoForm() : JFrame(), ActionListener {
+class TodoForm(
+    private var controller: RefreshController
+) : JFrame(), ActionListener {
 
     private val logger = org.slf4j.LoggerFactory.getLogger(this.javaClass)
 
     private val repository: TodoRepository = ApplicationContextProvider.getBean("todoRepository") as TodoRepository
 
-    private var titleJTextField: JTextField = HintTextField("Title")
-    private var descriptionJTextArea: JTextArea = HintTextArea("Description")
+    private var titleJTextField: JTextField = JTextField("Title")
+    private var descriptionJTextArea: JTextArea = JTextArea("Description")
 
     private var southPanel: JPanel = JPanel()
     private var summitButton: JButton = JButton("Summit")
@@ -51,7 +51,7 @@ class TodoForm() : JFrame(), ActionListener {
         cancelButton.addActionListener(this)
     }
 
-    constructor(idx: Long) : this() {
+    constructor(frame: RefreshController, idx: Long) : this(frame) {
         todo = repository.findById(idx).get()
         titleJTextField.text = todo.title
         descriptionJTextArea.text = todo.description
@@ -76,7 +76,7 @@ class TodoForm() : JFrame(), ActionListener {
                     dispose()
                 }
 
-                "Edit" ->{
+                "Edit" -> {
                     logger.info("edit")
                     logger.info("title: ${titleJTextField.text}")
                     logger.info("description: ${descriptionJTextArea.text}")
@@ -94,6 +94,7 @@ class TodoForm() : JFrame(), ActionListener {
                     dispose()
                 }
             }
+            controller.refresh()
         }
     }
 }
