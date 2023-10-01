@@ -5,6 +5,7 @@ import com.gulio.todo_swing.entity.Todo
 import com.gulio.todo_swing.repository.TodoRepository
 import com.gulio.todo_swing.view.widget.CustomMenu
 import java.awt.BorderLayout
+import javax.swing.JButton
 import javax.swing.JCheckBox
 import javax.swing.JFrame
 import javax.swing.JLabel
@@ -17,6 +18,7 @@ class MainPage : JFrame() {
     private val logger = org.slf4j.LoggerFactory.getLogger(this.javaClass)
 
     private val repository: TodoRepository = ApplicationContextProvider.getBean("todoRepository") as TodoRepository
+    private val refreshButton : JButton = JButton("Refresh")
 
     private var todoList: List<Todo> = repository.findAll()
 
@@ -46,7 +48,11 @@ class MainPage : JFrame() {
         jMenuBar = CustomMenu(this)
 
         add(jTable, BorderLayout.CENTER)
-        add(JLabel("made by namju"), BorderLayout.SOUTH)
+        add(refreshButton, BorderLayout.SOUTH)
+
+        refreshButton.addActionListener {
+            refreshTodoList()
+        }
 
 
         isVisible = true
