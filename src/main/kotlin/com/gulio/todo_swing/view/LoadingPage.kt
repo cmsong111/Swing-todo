@@ -1,12 +1,15 @@
 package com.gulio.todo_swing.view
 
+import java.awt.BorderLayout
+import java.awt.Image
+import javax.swing.ImageIcon
 import javax.swing.JFrame
 import javax.swing.JLabel
-import javax.swing.JPanel
 
 class LoadingPage : JFrame() {
 
-    var label = JLabel("Loading...")
+    private val label = JLabel("SpringBoot is Loading...")
+    private val image = ImageIcon(this.javaClass.getResource("/image/loading_image.png")).image
 
     init {
         title = "Loading"
@@ -14,13 +17,12 @@ class LoadingPage : JFrame() {
         setLocationRelativeTo(null)
         defaultCloseOperation = EXIT_ON_CLOSE
 
-        val panel = JPanel()
-        panel.add(label)
+        this.layout = BorderLayout()
+        label.horizontalAlignment = JLabel.CENTER
 
-        contentPane = panel
+        add(JLabel(ImageIcon(image.getScaledInstance(150, 150, Image.SCALE_SMOOTH))), BorderLayout.CENTER)
+        add(label, BorderLayout.SOUTH)
 
         isVisible = true
     }
-
-    
 }
