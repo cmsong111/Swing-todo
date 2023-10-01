@@ -5,19 +5,15 @@ import org.springframework.context.ApplicationContextAware
 import org.springframework.stereotype.Component
 
 @Component
-class ApplicationContextProvider : ApplicationContextAware {
+object ApplicationContextProvider : ApplicationContextAware {
 
-    companion object {
-        @JvmStatic
-        private var applicationContext: ApplicationContext? = null
-
-        @JvmStatic
-        public fun getApplicationContext(): ApplicationContext? {
-            return applicationContext
-        }
-    }
+    private var applicationContext: ApplicationContext? = null
 
     override fun setApplicationContext(context: ApplicationContext) {
         applicationContext = context
+    }
+
+    fun getBean(beanName: String): Any {
+        return applicationContext!!.getBean(beanName)
     }
 }

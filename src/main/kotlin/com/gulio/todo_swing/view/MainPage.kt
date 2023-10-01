@@ -1,6 +1,6 @@
 package com.gulio.todo_swing.view
 
-import com.gulio.todo_swing.configuration.BeanUtils
+import com.gulio.todo_swing.configuration.ApplicationContextProvider
 import com.gulio.todo_swing.entity.Todo
 import com.gulio.todo_swing.repository.TodoRepository
 import javax.swing.JFrame
@@ -9,7 +9,7 @@ import javax.swing.JLabel
 
 class MainPage : JFrame() {
 
-    val repository: TodoRepository = BeanUtils().getBean("todoRepository") as TodoRepository
+    private val repository: TodoRepository = ApplicationContextProvider.getBean("todoRepository") as TodoRepository
 
     var todo: Todo = repository.findById(1).get()
 
