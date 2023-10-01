@@ -1,5 +1,7 @@
 package com.gulio.todo_swing.view
 
+import HintTextArea
+import HintTextField
 import com.gulio.todo_swing.configuration.ApplicationContextProvider
 import com.gulio.todo_swing.entity.Todo
 import com.gulio.todo_swing.repository.TodoRepository
@@ -16,8 +18,8 @@ class TodoForm() : JFrame(), ActionListener {
 
     private val repository: TodoRepository = ApplicationContextProvider.getBean("todoRepository") as TodoRepository
 
-    private var titleJTextField: JTextField = JTextField()
-    private var descriptionJTextArea: JTextArea = JTextArea()
+    private var titleJTextField: JTextField = HintTextField("Title")
+    private var descriptionJTextArea: JTextArea = HintTextArea("Description")
 
     private var southPanel: JPanel = JPanel()
     private var summitButton: JButton = JButton("Summit")

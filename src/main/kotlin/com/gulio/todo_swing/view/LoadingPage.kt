@@ -1,6 +1,7 @@
 package com.gulio.todo_swing.view
 
 import java.awt.BorderLayout
+import java.awt.Dimension
 import java.awt.Image
 import javax.swing.ImageIcon
 import javax.swing.JFrame
@@ -19,6 +20,7 @@ class LoadingPage : JFrame() {
 
         this.layout = BorderLayout()
         label.horizontalAlignment = JLabel.CENTER
+        label.preferredSize = Dimension(300, 50)
 
         add(JLabel(ImageIcon(image.getScaledInstance(150, 150, Image.SCALE_SMOOTH))), BorderLayout.CENTER)
         add(label, BorderLayout.SOUTH)
