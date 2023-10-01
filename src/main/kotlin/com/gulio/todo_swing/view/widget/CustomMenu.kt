@@ -1,6 +1,6 @@
 package com.gulio.todo_swing.view.widget
 
-import com.gulio.todo_swing.view.CreatePage
+import com.gulio.todo_swing.view.TodoForm
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import javax.swing.JFrame
@@ -17,6 +17,7 @@ class CustomMenu(private var frame: JFrame) : JMenuBar(), ActionListener {
     private val todo = JMenu("Todo")
     private val newTodo = JMenuItem("New Todo")
     private val refresh = JMenuItem("Refresh")
+    private val edit = JMenuItem("1번 Edit")
 
     private val windows = JMenu("Windows")
     private val maximize = JMenuItem("Maximize")
@@ -29,6 +30,7 @@ class CustomMenu(private var frame: JFrame) : JMenuBar(), ActionListener {
 
         todo.add(newTodo)
         todo.add(refresh)
+        todo.add(edit)
 
         windows.add(maximize)
         windows.add(exit)
@@ -38,12 +40,14 @@ class CustomMenu(private var frame: JFrame) : JMenuBar(), ActionListener {
         refresh.addActionListener(this)
         maximize.addActionListener(this)
         exit.addActionListener(this)
+        edit.addActionListener(this)
     }
 
     override fun actionPerformed(e: ActionEvent?) {
         if (e != null) {
             when (e.source) {
-                newTodo -> CreatePage()
+                newTodo -> TodoForm()
+                edit -> TodoForm(1)
                 refresh -> logger.info("refresh")
                 maximize -> logger.info("maximize")
                 exit -> exitProcess(0)

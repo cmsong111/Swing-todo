@@ -7,9 +7,10 @@ import java.awt.BorderLayout
 import java.awt.Dimension
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
+import java.sql.Timestamp
 import javax.swing.*
 
-class CreatePage : JFrame(), ActionListener {
+class TodoForm() : JFrame(), ActionListener {
 
     private val logger = org.slf4j.LoggerFactory.getLogger(this.javaClass)
 
@@ -21,6 +22,9 @@ class CreatePage : JFrame(), ActionListener {
     private var southPanel: JPanel = JPanel()
     private var summitButton: JButton = JButton("Summit")
     private var cancelButton: JButton = JButton("Cancel")
+
+
+    private var todo: Todo = Todo()
 
     init {
         title = "Create"
@@ -45,10 +49,18 @@ class CreatePage : JFrame(), ActionListener {
         cancelButton.addActionListener(this)
     }
 
+    constructor(idx: Long) : this() {
+        todo = repository.findById(idx).get()
+        titleJTextField.text = todo.title
+        descriptionJTextArea.text = todo.description
+        summitButton.actionCommand = "Edit"
+    }
+
+
     override fun actionPerformed(e: ActionEvent?) {
         if (e != null) {
-            when (e.source) {
-                summitButton -> {
+            when (e.actionCommand) {
+                "Summit" -> {
                     logger.info("summit")
                     logger.info("title: ${titleJTextField.text}")
                     logger.info("description: ${descriptionJTextArea.text}")
@@ -62,7 +74,20 @@ class CreatePage : JFrame(), ActionListener {
                     dispose()
                 }
 
-                cancelButton -> {
+                "Edit" ->{
+                    logger.info("edit")
+                    logger.info("title: ${titleJTextField.text}")
+                    logger.info("description: ${descriptionJTextArea.text}")
+
+                    todo.title = titleJTextField.text
+                    todo.description = descriptionJTextArea.text
+                    todo.updatedAt = Timestamp(System.currentTimeMillis())
+
+                    repository.save(todo)
+                    dispose()
+                }
+
+                "Cancel" -> {
                     logger.info("cancel")
                     dispose()
                 }
