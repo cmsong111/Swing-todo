@@ -118,6 +118,10 @@ Hibernate:
 
 <img  align="center" src="./img/edit_todo.gif">
 
-### 3.4. TodoList 삭제
+### 3.4. TodoList 완료
+
+<img  align="center" src="./img/done_todo.gif">
+
+### 3.5. TodoList 삭제
 
 <img  align="center" src="./img/delete_todo.gif">
