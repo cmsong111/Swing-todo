@@ -1,4 +1,4 @@
-package com.gulio.todo_swing.configuration
+package todo_swing.configuration
 
 import org.springframework.context.ApplicationContext
 import org.springframework.context.ApplicationContextAware

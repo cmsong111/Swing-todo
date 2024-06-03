@@ -1,7 +1,7 @@
-package com.gulio.todo_swing
+package todo_swing
 
-import com.gulio.todo_swing.view.LoadingPage
-import com.gulio.todo_swing.view.MainPage
+import todo_swing.common.fragment.LoadingPage
+import todo_swing.common.fragment.MainPage
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing

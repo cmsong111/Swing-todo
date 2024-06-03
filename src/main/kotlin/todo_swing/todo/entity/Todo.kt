@@ -1,4 +1,4 @@
-package com.gulio.todo_swing.entity
+package todo_swing.todo.entity
 
 import jakarta.persistence.*
 import org.springframework.data.annotation.CreatedDate

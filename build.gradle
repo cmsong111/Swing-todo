@@ -27,6 +27,10 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-reflect'
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // REST API
+    implementation 'com.squareup.retrofit2:retrofit:2.6.4'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.6.4'
 }
 
 configurations.matching { it.name.startsWith("dokka") }.configureEach {
@@ -37,15 +41,15 @@ configurations.matching { it.name.startsWith("dokka") }.configureEach {
     }
 }
 
-tasks.withType(DokkaTask).configureEach {
+tasks.withType(DokkaTask.class) {
+    moduleName.set(project.name)
+    moduleVersion.set(project.version.toString())
     dokkaSourceSets {
-        named("main") {
-            moduleName.set("TODO Swing Application")
+        configureEach {
             includes.from("docs.md")
-            sourcelink {
+            sourceLink {
                 localDirectory.set(file("src/main/kotlin"))
-                remoteUrl.set(URL("https://github.com/cmsong111/Swing-todo/tree/main" +
-                        "src/main/kotlin"))
+                remoteUrl.set(URL("https://github.com/cmsong111/Swing-todo/tree/master/src"))
                 remoteLineSuffix.set("#L")
             }
         }
@@ -62,4 +66,13 @@ tasks.withType(KotlinCompile) {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+tasks.withType(Jar) {
+    manifest {
+        attributes(
+                'Implementation-Title': project.name,
+                'Implementation-Version': project.version
+        )
+    }
 }

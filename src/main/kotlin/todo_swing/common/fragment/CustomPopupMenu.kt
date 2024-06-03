@@ -1,10 +1,9 @@
-package com.gulio.todo_swing.view.widget
+package todo_swing.common.fragment
 
 
-import com.gulio.todo_swing.configuration.ApplicationContextProvider
-import com.gulio.todo_swing.repository.TodoRepository
-import com.gulio.todo_swing.view.RefreshController
-import com.gulio.todo_swing.view.TodoForm
+import todo_swing.configuration.ApplicationContextProvider
+import todo_swing.todo.repository.TodoRepository
+import todo_swing.todo.view.TodoForm
 import java.awt.Component
 import java.awt.event.MouseEvent
 import java.awt.event.MouseListener
