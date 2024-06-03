@@ -58,7 +58,16 @@ jobs:
         with:
           tag: v${{ env.VERSION }}
           name: Release ${{ env.VERSION }}
-          body : ${{ steps.tag_version.outputs.changelog }}
+          body: ${{ steps.tag_version.outputs.changelog }}
           skipIfReleaseExists: true
           artifacts: build/libs/*.jar
           artifactContentType: application/java-archive
+
+      - name: Build Documentation
+        run: ./gradlew dokkaHtml
+
+      - name: Deploy Documentation to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          BRANCH: docs
+          FOLDER: build/dokka/html
