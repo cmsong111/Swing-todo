@@ -7,6 +7,9 @@ import javax.swing.ImageIcon
 import javax.swing.JFrame
 import javax.swing.JLabel
 
+/**
+ * 로딩 화면
+ */
 class LoadingPage : JFrame() {
 
     private val label = JLabel("SpringBoot is Loading...")

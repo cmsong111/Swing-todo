@@ -6,9 +6,16 @@ import org.springframework.data.annotation.LastModifiedDate
 import org.springframework.data.jpa.domain.support.AuditingEntityListener
 import java.sql.Timestamp
 
+/**
+ * Todo ORM Class
+ */
 @Entity
 @EntityListeners(AuditingEntityListener::class)
 class Todo(
+    /**
+     * ID (Primary Key)
+     * Auto Increment를 통해 자동으로 증가
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long = 0,

@@ -7,6 +7,9 @@ import javax.swing.JFrame
 import javax.swing.JLabel
 
 
+/**
+ * MainPage 화면 JFrame 클래스
+ */
 class MainPage : JFrame() {
 
     private val logger = org.slf4j.LoggerFactory.getLogger(this.javaClass)
