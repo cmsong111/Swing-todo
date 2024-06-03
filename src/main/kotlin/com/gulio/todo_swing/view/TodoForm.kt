@@ -83,7 +83,6 @@ class TodoForm(
 
                     todo.title = titleJTextField.text
                     todo.description = descriptionJTextArea.text
-                    todo.updatedAt = Timestamp(System.currentTimeMillis())
 
                     repository.save(todo)
                     dispose()

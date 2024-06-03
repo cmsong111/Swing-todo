@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory
 import java.awt.GridLayout
 import java.awt.event.MouseAdapter
 import java.awt.event.MouseEvent
-import java.sql.Timestamp
+import java.text.SimpleDateFormat
 import javax.swing.JPanel
 import javax.swing.JScrollPane
 import javax.swing.JTable
@@ -23,6 +23,8 @@ class TodoChart() : JPanel(), RefreshController {
     private val scrollPane = JScrollPane()
 
     private val popupMenu = CustomPopupMenu(this@TodoChart)
+
+    private val simpleDateFormat: SimpleDateFormat = SimpleDateFormat("yyyy년 MM월 dd일 HH시mm분")
 
     // table model
     private val tableModel: DefaultTableModel = object : DefaultTableModel(
@@ -40,8 +42,8 @@ class TodoChart() : JPanel(), RefreshController {
                 1 -> String::class.java
                 2 -> String::class.java
                 3 -> Boolean::class.java
-                4 -> Timestamp::class.java
-                5 -> Timestamp::class.java
+                4 -> String::class.java
+                5 -> String::class.java
                 else -> throw IllegalArgumentException("Invalid column index")
             }
         }
@@ -65,8 +67,8 @@ class TodoChart() : JPanel(), RefreshController {
                     todo.title,
                     todo.description,
                     todo.status,
-                    todo.createdAt,
-                    todo.updatedAt
+                    simpleDateFormat.format(todo.createdAt),
+                    simpleDateFormat.format(todo.updatedAt),
                 )
             )
         }
@@ -85,7 +87,6 @@ class TodoChart() : JPanel(), RefreshController {
                     popupMenu.show(this@TodoChart, e.x, e.y, idx)
                 }
             }
-
         })
         scrollPane.setViewportView(jTable)
         add(scrollPane)
