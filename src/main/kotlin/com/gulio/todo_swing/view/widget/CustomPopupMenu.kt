@@ -11,6 +11,9 @@ import java.awt.event.MouseListener
 import javax.swing.JMenuItem
 import javax.swing.JPopupMenu
 
+/**
+ * CustomPopupMenu 클래스
+ */
 class CustomPopupMenu(
     private val controller: RefreshController
 ) : JPopupMenu(), MouseListener {

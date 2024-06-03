@@ -9,7 +9,11 @@ import javax.swing.JMenuBar
 import javax.swing.JMenuItem
 import kotlin.system.exitProcess
 
-
+/**
+ * JMenuBar를 커스텀한 클래스
+ * 
+ * 상단의 메뉴바에 적용됩니다
+ */
 class CustomMenu(private var controller: RefreshController) : JMenuBar(), ActionListener {
 
     private val logger = org.slf4j.LoggerFactory.getLogger(this.javaClass)
