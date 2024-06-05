@@ -1,7 +1,6 @@
-package com.gulio.todo_swing.view.widget
+package todo_swing.common.fragment
 
-import com.gulio.todo_swing.view.RefreshController
-import com.gulio.todo_swing.view.TodoForm
+import todo_swing.todo.view.TodoForm
 import java.awt.event.ActionEvent
 import java.awt.event.ActionListener
 import javax.swing.JMenu
@@ -11,7 +10,7 @@ import kotlin.system.exitProcess
 
 /**
  * JMenuBar를 커스텀한 클래스
- * 
+ *
  * 상단의 메뉴바에 적용됩니다
  */
 class CustomMenu(private var controller: RefreshController) : JMenuBar(), ActionListener {

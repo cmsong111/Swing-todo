@@ -1,4 +1,4 @@
-package com.gulio.todo_swing.view
+package todo_swing.common.fragment
 
 interface RefreshController {
     /**

@@ -1,9 +1,12 @@
-package com.gulio.todo_swing.repository
+package todo_swing.todo.repository
 
-import com.gulio.todo_swing.entity.Todo
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
+import todo_swing.todo.entity.Todo
 
+/**
+ * Todo Repository (Spring Data JPA)
+ */
 @Repository
 interface TodoRepository : JpaRepository<Todo, Long> {
 }

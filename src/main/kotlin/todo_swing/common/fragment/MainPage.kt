@@ -1,7 +1,6 @@
-package com.gulio.todo_swing.view
+package todo_swing.common.fragment
 
-import com.gulio.todo_swing.view.widget.CustomMenu
-import com.gulio.todo_swing.view.widget.TodoChart
+import todo_swing.todo.view.TodoChart
 import java.awt.BorderLayout
 import javax.swing.JFrame
 import javax.swing.JLabel

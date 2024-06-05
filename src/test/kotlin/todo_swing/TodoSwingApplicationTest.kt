@@ -1,13 +1,12 @@
-package com.gulio.todo_swing
+package todo_swing
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class TodoSwingApplicationTests {
+class TodoSwingApplicationTest {
 
-	@Test
-	fun contextLoads() {
-	}
-
+    @Test
+    fun contextLoads() {
+    }
 }
