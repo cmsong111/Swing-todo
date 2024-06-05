@@ -1,0 +1,78 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:todo_swing.common.api.github////PointingToDeclaration/todo_swing/todo_swing.common.api.github/index.html
+$dokka.location:todo_swing.common.api.github/Commit///PointingToDeclaration/todo_swing/todo_swing.common.api.github/-commit/index.html
+$dokka.location:todo_swing.common.api.github/Commit/Commit/#kotlin.String?#kotlin.String?/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-commit/-commit.html
+$dokka.location:todo_swing.common.api.github/Commit/sha/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-commit/sha.html
+$dokka.location:todo_swing.common.api.github/Commit/toString/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-commit/to-string.html
+$dokka.location:todo_swing.common.api.github/Commit/url/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-commit/url.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse///PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/index.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse/GithubTagResponse/#kotlin.String?#kotlin.String?#kotlin.String?#todo_swing.common.api.github.Commit?#kotlin.String?/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/-github-tag-response.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse/commit/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/commit.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse/name/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/name.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse/nodeId/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/node-id.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse/tarballUrl/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/tarball-url.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse/toString/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/to-string.html
+$dokka.location:todo_swing.common.api.github/GithubTagResponse/zipballUrl/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-github-tag-response/zipball-url.html
+$dokka.location:todo_swing.common.api.github/VersionCheck///PointingToDeclaration/todo_swing/todo_swing.common.api.github/-version-check/index.html
+$dokka.location:todo_swing.common.api.github/VersionCheck/VersionCheck/#/PointingToDeclaration/todo_swing/todo_swing.common.api.github/-version-check/-version-check.html
+$dokka.location:todo_swing.common.api////PointingToDeclaration/todo_swing/todo_swing.common.api/index.html
+$dokka.location:todo_swing.common.api/GithubAPI///PointingToDeclaration/todo_swing/todo_swing.common.api/-github-a-p-i/index.html
+$dokka.location:todo_swing.common.api/GithubAPI/getTags/#/PointingToDeclaration/todo_swing/todo_swing.common.api/-github-a-p-i/get-tags.html
+$dokka.location:todo_swing.common.api/Retrofit2Builder///PointingToDeclaration/todo_swing/todo_swing.common.api/-retrofit2-builder/index.html
+$dokka.location:todo_swing.common.api/Retrofit2Builder/githubAPI/#/PointingToDeclaration/todo_swing/todo_swing.common.api/-retrofit2-builder/github-a-p-i.html
+$dokka.location:todo_swing.common.fragment////PointingToDeclaration/todo_swing/todo_swing.common.fragment/index.html
+$dokka.location:todo_swing.common.fragment/CustomMenu///PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-menu/index.html
+$dokka.location:todo_swing.common.fragment/CustomMenu/CustomMenu/#todo_swing.common.fragment.RefreshController/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-menu/-custom-menu.html
+$dokka.location:todo_swing.common.fragment/CustomMenu/actionPerformed/#java.awt.event.ActionEvent?/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-menu/action-performed.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu///PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/index.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu/CustomPopupMenu/#todo_swing.common.fragment.RefreshController/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/-custom-popup-menu.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu/mouseClicked/#java.awt.event.MouseEvent?/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/mouse-clicked.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu/mouseEntered/#java.awt.event.MouseEvent?/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/mouse-entered.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu/mouseExited/#java.awt.event.MouseEvent?/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/mouse-exited.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu/mousePressed/#java.awt.event.MouseEvent?/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/mouse-pressed.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu/mouseReleased/#java.awt.event.MouseEvent?/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/mouse-released.html
+$dokka.location:todo_swing.common.fragment/CustomPopupMenu/show/#java.awt.Component?#kotlin.Int#kotlin.Int#kotlin.Long/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-custom-popup-menu/show.html
+$dokka.location:todo_swing.common.fragment/LoadingPage///PointingToDeclaration/todo_swing/todo_swing.common.fragment/-loading-page/index.html
+$dokka.location:todo_swing.common.fragment/LoadingPage/LoadingPage/#/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-loading-page/-loading-page.html
+$dokka.location:todo_swing.common.fragment/MainPage///PointingToDeclaration/todo_swing/todo_swing.common.fragment/-main-page/index.html
+$dokka.location:todo_swing.common.fragment/MainPage/MainPage/#/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-main-page/-main-page.html
+$dokka.location:todo_swing.common.fragment/RefreshController///PointingToDeclaration/todo_swing/todo_swing.common.fragment/-refresh-controller/index.html
+$dokka.location:todo_swing.common.fragment/RefreshController/refresh/#/PointingToDeclaration/todo_swing/todo_swing.common.fragment/-refresh-controller/refresh.html
+$dokka.location:todo_swing.configuration////PointingToDeclaration/todo_swing/todo_swing.configuration/index.html
+$dokka.location:todo_swing.configuration/ApplicationContextProvider///PointingToDeclaration/todo_swing/todo_swing.configuration/-application-context-provider/index.html
+$dokka.location:todo_swing.configuration/ApplicationContextProvider/getBean/#kotlin.String/PointingToDeclaration/todo_swing/todo_swing.configuration/-application-context-provider/get-bean.html
+$dokka.location:todo_swing.configuration/ApplicationContextProvider/setApplicationContext/#org.springframework.context.ApplicationContext/PointingToDeclaration/todo_swing/todo_swing.configuration/-application-context-provider/set-application-context.html
+$dokka.location:todo_swing.todo.entity////PointingToDeclaration/todo_swing/todo_swing.todo.entity/index.html
+$dokka.location:todo_swing.todo.entity/Todo///PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/index.html
+$dokka.location:todo_swing.todo.entity/Todo/Todo/#kotlin.Long#kotlin.String#kotlin.String#kotlin.Boolean#java.sql.Timestamp?#java.sql.Timestamp?/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/-todo.html
+$dokka.location:todo_swing.todo.entity/Todo/createdAt/#/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/created-at.html
+$dokka.location:todo_swing.todo.entity/Todo/description/#/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/description.html
+$dokka.location:todo_swing.todo.entity/Todo/id/#/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/id.html
+$dokka.location:todo_swing.todo.entity/Todo/status/#/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/status.html
+$dokka.location:todo_swing.todo.entity/Todo/title/#/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/title.html
+$dokka.location:todo_swing.todo.entity/Todo/toString/#/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/to-string.html
+$dokka.location:todo_swing.todo.entity/Todo/updatedAt/#/PointingToDeclaration/todo_swing/todo_swing.todo.entity/-todo/updated-at.html
+$dokka.location:todo_swing.todo.repository////PointingToDeclaration/todo_swing/todo_swing.todo.repository/index.html
+$dokka.location:todo_swing.todo.repository/TodoRepository///PointingToDeclaration/todo_swing/todo_swing.todo.repository/-todo-repository/index.html
+$dokka.location:todo_swing.todo.view////PointingToDeclaration/todo_swing/todo_swing.todo.view/index.html
+$dokka.location:todo_swing.todo.view/TodoChart///PointingToDeclaration/todo_swing/todo_swing.todo.view/-todo-chart/index.html
+$dokka.location:todo_swing.todo.view/TodoChart/TodoChart/#/PointingToDeclaration/todo_swing/todo_swing.todo.view/-todo-chart/-todo-chart.html
+$dokka.location:todo_swing.todo.view/TodoChart/refresh/#/PointingToDeclaration/todo_swing/todo_swing.todo.view/-todo-chart/refresh.html
+$dokka.location:todo_swing.todo.view/TodoForm///PointingToDeclaration/todo_swing/todo_swing.todo.view/-todo-form/index.html
+$dokka.location:todo_swing.todo.view/TodoForm/TodoForm/#todo_swing.common.fragment.RefreshController#kotlin.Long/PointingToDeclaration/todo_swing/todo_swing.todo.view/-todo-form/-todo-form.html
+$dokka.location:todo_swing.todo.view/TodoForm/TodoForm/#todo_swing.common.fragment.RefreshController/PointingToDeclaration/todo_swing/todo_swing.todo.view/-todo-form/-todo-form.html
+$dokka.location:todo_swing.todo.view/TodoForm/actionPerformed/#java.awt.event.ActionEvent?/PointingToDeclaration/todo_swing/todo_swing.todo.view/-todo-form/action-performed.html
+$dokka.location:todo_swing////PointingToDeclaration/todo_swing/todo_swing/index.html
+$dokka.location:todo_swing//main/#kotlin.Array[kotlin.String]/PointingToDeclaration/todo_swing/todo_swing/main.html
+$dokka.location:todo_swing/TodoSwingApplication///PointingToDeclaration/todo_swing/todo_swing/-todo-swing-application/index.html
+$dokka.location:todo_swing/TodoSwingApplication/TodoSwingApplication/#/PointingToDeclaration/todo_swing/todo_swing/-todo-swing-application/-todo-swing-application.html
+todo_swing
+todo_swing.common.api
+todo_swing.common.api.github
+todo_swing.common.fragment
+todo_swing.configuration
+todo_swing.todo.entity
+todo_swing.todo.repository
+todo_swing.todo.view
+
