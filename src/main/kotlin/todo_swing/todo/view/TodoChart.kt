@@ -14,6 +14,11 @@ import javax.swing.JScrollPane
 import javax.swing.JTable
 import javax.swing.table.DefaultTableModel
 
+/**
+ * TodoChart 클래스
+ *
+ * @author Namju kim
+ */
 class TodoChart() : JPanel(), RefreshController {
     // Spring Bean
     private val repository: TodoRepository = ApplicationContextProvider.getBean("todoRepository") as TodoRepository

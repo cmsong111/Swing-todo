@@ -1,4 +1,4 @@
-package todo_swing.common.github
+package todo_swing.common.api.github
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

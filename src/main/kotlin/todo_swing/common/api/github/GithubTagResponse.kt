@@ -1,8 +1,13 @@
-package todo_swing.common.github
+package todo_swing.common.api.github
 
 import com.fasterxml.jackson.annotation.JsonProperty
 
 
+/**
+ * GithubTagResponse
+ *
+ * Github API에서 Tag 정보를 받아오기 위한 데이터 클래스입니다.
+ */
 data class GithubTagResponse(
     @JsonProperty("name") var name: String? = null,
     @JsonProperty("zipball_url") var zipballUrl: String? = null,
